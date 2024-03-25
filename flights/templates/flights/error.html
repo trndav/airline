@@ -1,0 +1,6 @@
+{% extends "flights/layout.html" %}
+{% block body%}
+<h1>Flight {{ flight.id }}</h1>
+    <p>{{ error_message }} </p>
+    <a href="{% url 'index' %}">All Flights</a>    
+{% endblock %}
