@@ -1,8 +1,6 @@
 # Configure how workflow behave
-
 name: Testing
 on: push
-
 jobs: 
   test_project:
     runs-on: ubuntu-latest
@@ -10,5 +8,5 @@ jobs:
     - uses: actions/checkout@v2 # Check code in git repo
     - name: Run django unit tests # Description
       run:
-        # First install Django
+        # Install Django and run test
         pip install --user django; python manage.py test # Run test
